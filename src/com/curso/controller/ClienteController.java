@@ -41,9 +41,6 @@ public class ClienteController {
 								HttpServletRequest request) {
 		
 		boolean result = serviceClient.loginCliente(usuario,password);
-		
-		//request.setAttribute("temas", serviceBook.recuperarTemas());
-		
 		return  result ? "forward:/temas" : "loginIncorrecto";
 	}
 		

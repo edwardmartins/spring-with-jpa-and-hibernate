@@ -19,7 +19,6 @@ public class LibroController {
 	@Autowired
 	LibroService service;
 
-	// Request mapping por que lo llamamos con forward desde un POST
 	@RequestMapping(value = "/temas")
 	public String recuperarTemas(HttpServletRequest request) {
 		List<Tema> lista = service.recuperarTemas();
